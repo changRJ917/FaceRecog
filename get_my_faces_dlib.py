@@ -11,7 +11,7 @@ if not os.path.exists(out_dir):
 def relight(img, light=1, beta=0):
     w = img.shape[1]
     h = img.shape[0]
-    # tem = [,,,]
+    # h, w, _ = img.shape
 
     for i in range(h):
         for j in range(w):
@@ -29,7 +29,7 @@ cam = cv2.VideoCapture(0)
 
 index = 1
 while True:
-    if index<=10:
+    if index<=500:
         print('Being processed picture %s' % index)
         success, img = cam.read()
         gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

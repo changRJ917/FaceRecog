@@ -1,2 +1,7 @@
-my_faces/*
-.vscode/*
+/*
+!.gitignore
+!is_my_face.py
+!get_my_faces_dlib.py
+!get_my_faces_nodlib.py
+!set_other_faces.py
+!train_faces.py
